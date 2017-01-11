@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Examples - Ace admin template</title>
+
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" />
+    <style>
+        body {
+            background: #E4E6E9;
+        }
+        .main-container {
+            padding-top: 72px;
+        }
+        .navbar-inverse {
+            background-color: #438EB9;
+            border-bottom-color: rgba(0,0,0,0.33);
+        }
+        .navbar-inverse .navbar-brand {
+            color: #EEE;
+        }
+    </style>
+</head>
+
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header pull-left">
+            <a class="navbar-brand" href="#">
+                &nbsp;<i class="glyphicon glyphicon-leaf"><img
+                    src="static/login/logo.png"></i>&nbsp;
+                Ace admin template
+            </a>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a
+                        id="aLogin" type="button" eventId="Q0123"
+                        style="cursor: pointer;padding-left:15px; padding-right:15px;margin-left:0;margin-right:0"
+                        class="nav_link">登录</a></li>
+                <li><a style="padding-left:0; padding-right:0; margin-left:0;margin-right:0;color:#ccc"
+                       class="nav_link">|</a></li>
+                <li><a id="aRegister" href="javascript:void(0)" type="button" eventId="Q0124"
+                       style="padding-left:15px; padding-right:15px;margin-left:0;margin-right:0"
+                       class="nav_link">免费注册</a></li>
+                <li style="margin-left:10px;" class="nav_link"><a
+                        style="padding-left:0; padding-right:0; margin-left:0;margin-right:0;color:#ccc">|</a></li>
+                <li style="display:inline-block;" class="nav_link"><a href="/members" target="_blank"
+                                                                      style="display:inline-block;padding-left:15px; padding-right:15px;margin-left:0;margin-right:0"
+                                                                      eventId="Q0174">会员服务</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container main-container">
+    <h2 class="page-header text-primary">Examples</small></h2>
+
+    <script>
+        if(document.location.protocol == 'file:') {
+            document.write('<div class="alert alert-danger">\
+			<strong>Please open this page using <span class="text-info">`http` protocol</span>, i.e. access it via a web server.</strong><br />\
+			In some examples data is uploaded/downloaded dynamically using ajax and <b>`file` protocol</b> prevents that due to browser restrictions.\<br />\
+			Also some browsers such as Firefox don\'t load fonts when resource files are inside an upper level directory.\
+			</div>');
+        }
+    </script>
+
+
+
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="list-group">
+                <a href="file-upload.html" class="list-group-item">
+                    File Upload
+                </a>
+                <a href="profile-update.html" class="list-group-item">
+                    Profile Avatar Update
+                </a>
+                <a href="treeview.html" class="list-group-item">
+                    Treeview
+                </a>
+                <a href="widget.html" class="list-group-item">
+                    Widget Box
+                </a>
+                <a href="wysiwyg.html" class="list-group-item">
+                    Wysiwyg
+                </a>
+                <a href="daterange.html" class="list-group-item">
+                    Internationalization &amp; Languages
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
